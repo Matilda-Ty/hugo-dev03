@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Study on Matilda-Ty</title>
+        <link>https://Matilda-Ty.github.io/hugo-dev03/tags/study/</link>
+        <description>Recent content in Study on Matilda-Ty</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Matilda-Ty</copyright>
+        <lastBuildDate>Mon, 09 Sep 2024 19:16:56 +0800</lastBuildDate><atom:link href="https://Matilda-Ty.github.io/hugo-dev03/tags/study/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hugo&#43;github博客开发</title>
+        <link>https://Matilda-Ty.github.io/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/</link>
+        <pubDate>Mon, 09 Sep 2024 19:16:56 +0800</pubDate>
+        
+        <guid>https://Matilda-Ty.github.io/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/</guid>
+        <description>&lt;img src="https://Matilda-Ty.github.io/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%A4%8F%E6%97%A5%F0%9F%94%86%E6%B8%85%E5%87%89%E6%84%9F%F0%9F%AB%A7%E5%86%B0%E9%80%8F%F0%9F%A7%8A_%E5%B0%8F%E4%BC%97%E2%9C%A8%E6%89%8B%E6%9C%BA%E5%A3%81%E7%BA%B8_2_%E5%A4%B4%E5%83%8F%E5%A3%81%E7%BA%B8%E5%9B%BE%E6%96%87%E9%9B%86%F0%9F%8E%80_%E6%9D%A5%E8%87%AA%E5%B0%8F%E7%BA%A2%E4%B9%A6%E7%BD%91%E9%A1%B5%E7%89%88.jpg" alt="Featured image of post Hugo&#43;github博客开发" /&gt;&lt;h2 id=&#34;第一二次尝试失败&#34;&gt;第一，二次尝试——失败
+&lt;/h2&gt;&lt;h3 id=&#34;第一次&#34;&gt;第一次
+&lt;/h3&gt;&lt;h4 id=&#34;报错&#34;&gt;报错：
+&lt;/h4&gt;&lt;img src=&#34;ededd3c186a00f761a4656a1387f8d5.png&#34; alt=&#34;image-20240909183908815&#34; style=&#34;zoom:80%;&#34; /&gt;
+&lt;img src=&#34;微信图片_20240909192610.png&#34; alt=&#34;img&#34; style=&#34;zoom:80%;&#34; /&gt;
+&lt;h4 id=&#34;原因&#34;&gt;原因：
+&lt;/h4&gt;&lt;p&gt;可能是路径没输入对&lt;/p&gt;
+&lt;h4 id=&#34;up的解决方案&#34;&gt;up的解决方案：
+&lt;/h4&gt;&lt;p&gt;报错信息说找不到你仓库地址，检查一下你仓库地址填得是否正确，是否按照“github名/仓库名”的形式填写&lt;/p&gt;
+&lt;h3 id=&#34;第二次&#34;&gt;第二次
+&lt;/h3&gt;&lt;h4 id=&#34;原因-1&#34;&gt;原因：
+&lt;/h4&gt;&lt;p&gt;按照chatgpt的操作导致文件被打乱，破坏&lt;/p&gt;
+&lt;img src=&#34;微信图片_20240909192656.png&#34; alt=&#34;image-20240909184224785&#34; style=&#34;zoom:80%;&#34; /&gt;
+&lt;img src=&#34;微信图片_20240909192722.png&#34; alt=&#34;image-20240909184410422&#34; style=&#34;zoom:80%;&#34; /&gt;
+&lt;p&gt;只能重新做&lt;/p&gt;
+&lt;h2 id=&#34;第三四次尝试失败&#34;&gt;第三，四次尝试——失败
+&lt;/h2&gt;&lt;h3 id=&#34;结果&#34;&gt;结果：
+&lt;/h3&gt;&lt;p&gt;push上github但是网页打开404&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240909192744.png&#34;
+	width=&#34;290&#34;
+	height=&#34;164&#34;
+	srcset=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240909192744_hu12412028987621654842.png 480w, https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240909192744_hu13534429032290063655.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240909174650045&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;424px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240909192812.png&#34;
+	width=&#34;1756&#34;
+	height=&#34;922&#34;
+	srcset=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240909192812_hu12673391550972369090.png 480w, https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240909192812_hu6953013707047171974.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240909174714149&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;190&#34;
+		data-flex-basis=&#34;457px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240909192829.png&#34;
+	width=&#34;711&#34;
+	height=&#34;362&#34;
+	srcset=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240909192829_hu16861982546021656025.png 480w, https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240909192829_hu17832020004103129964.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240909174607979&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;196&#34;
+		data-flex-basis=&#34;471px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;问题：应该在public打开命令控制台&lt;/p&gt;
+&lt;p&gt;E:\T-y\T-y aimer a\T-y Matilda\dev\public&lt;/p&gt;
+&lt;p&gt;但是我在dev文件打开了&lt;/p&gt;
+&lt;h2 id=&#34;第五次实验&#34;&gt;第五次实验
+&lt;/h2&gt;&lt;h4 id=&#34;目前发生情况&#34;&gt;目前发生情况：
+&lt;/h4&gt;&lt;p&gt;push库时多输入了git add README.md&lt;/p&gt;
+&lt;h4 id=&#34;自动部署成功&#34;&gt;自动部署成功！
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240909192914.png&#34;
+	width=&#34;1838&#34;
+	height=&#34;886&#34;
+	srcset=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240909192914_hu3102553527378465364.png 480w, https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240909192914_hu9406514760134759555.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240909191222356&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;207&#34;
+		data-flex-basis=&#34;497px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
