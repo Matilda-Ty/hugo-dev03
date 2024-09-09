@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Matilda-Ty</copyright>
-        <lastBuildDate>Mon, 09 Sep 2024 19:05:37 +0800</lastBuildDate><atom:link href="https://Matilda-Ty.github.io/hugo-dev03/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 09 Sep 2024 19:16:56 +0800</lastBuildDate><atom:link href="https://Matilda-Ty.github.io/hugo-dev03/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hugo&#43;github博客开发</title>
+        <link>https://Matilda-Ty.github.io/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/</link>
+        <pubDate>Mon, 09 Sep 2024 19:16:56 +0800</pubDate>
+        
+        <guid>https://Matilda-Ty.github.io/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Tillie</title>
         <link>https://Matilda-Ty.github.io/hugo-dev03/p/tillie/</link>
         <pubDate>Mon, 09 Sep 2024 19:05:37 +0800</pubDate>
