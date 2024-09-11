@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Tillie is taking the operating system course in her junior year">
+<title>操作系统</title>
+
+<link rel='canonical' href='https://Matilda-Ty.github.io/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/'>
+
+<link rel="stylesheet" href="/hugo-dev03/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="操作系统">
+<meta property='og:description' content="Tillie is taking the operating system course in her junior year">
+<meta property='og:url' content='https://Matilda-Ty.github.io/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/'>
+<meta property='og:site_name' content='Matilda-Ty'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Study' /><meta property='article:published_time' content='2024-09-11T13:11:33&#43;08:00'/><meta property='article:modified_time' content='2024-09-11T13:11:33&#43;08:00'/><meta property='og:image' content='https://Matilda-Ty.github.io/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911130525.png' />
+<meta name="twitter:title" content="操作系统">
+<meta name="twitter:description" content="Tillie is taking the operating system course in her junior year"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://Matilda-Ty.github.io/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911130525.png' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/hugo-dev03/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/hugo-dev03/img/avatar_hu12438328137424874343.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🐈</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/hugo-dev03">Matilda-Ty</a></h1>
+            <h2 class="site-description">Welcome home, Matilda.</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://www.bilibili.com/'
+                        target="_blank"
+                        title="bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1725681513271" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7478" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><path d="M306.005333 117.632L444.330667 256h135.296l138.368-138.325333a42.666667 42.666667 0 1 1 60.373333 60.373333l-78.037333 77.952L789.333333 256A149.333333 149.333333 0 0 1 938.666667 405.333333v341.333334a149.333333 149.333333 0 0 1-149.333334 149.333333h-554.666666A149.333333 149.333333 0 0 1 85.333333 746.666667v-341.333334A149.333333 149.333333 0 0 1 234.666667 256h88.96L245.632 177.962667a42.666667 42.666667 0 0 1 60.373333-60.373334zM789.333333 341.333333h-554.666666a64 64 0 0 0-63.701334 57.856L170.666667 405.333333v341.333334a64 64 0 0 0 57.856 63.701333L234.666667 810.666667h554.666666a64 64 0 0 0 63.701334-57.813334L853.333333 746.666667v-341.333334A64 64 0 0 0 789.333333 341.333333zM341.333333 469.333333a42.666667 42.666667 0 0 1 42.666667 42.666667v85.333333a42.666667 42.666667 0 1 1-85.333333 0v-85.333333a42.666667 42.666667 0 0 1 42.666666-42.666667z m341.333334 0a42.666667 42.666667 0 0 1 42.666666 42.666667v85.333333a42.666667 42.666667 0 1 1-85.333333 0v-85.333333a42.666667 42.666667 0 0 1 42.666667-42.666667z" p-id="7479" fill="#8a8a8a"></path></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.douyin.com/'
+                        target="_blank"
+                        title="douyin"
+                        rel="me"
+                    >
+                        
+                        
+                            <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1725681676524" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9003" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><path d="M937.4 423.9c-84 0-165.7-27.3-232.9-77.8v352.3c0 179.9-138.6 325.6-309.6 325.6S85.3 878.3 85.3 698.4c0-179.9 138.6-325.6 309.6-325.6 17.1 0 33.7 1.5 49.9 4.3v186.6c-15.5-6.1-32-9.2-48.6-9.2-76.3 0-138.2 65-138.2 145.3 0 80.2 61.9 145.3 138.2 145.3 76.2 0 138.1-65.1 138.1-145.3V0H707c0 134.5 103.7 243.5 231.6 243.5v180.3l-1.2 0.1" p-id="9004" fill="#8a8a8a"></path></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.xiaohongshu.com/explore'
+                        target="_blank"
+                        title="xiaohongshu"
+                        rel="me"
+                    >
+                        
+                        
+                            <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1725681840862" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10145" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><path d="M142.506667 434.773333H80.512c5.397333 80.917333-14.4 142.293333-14.4 142.293334l33.258667 60.949333c44.096-18.901333 43.178667-203.242667 43.178666-203.242667z m201.472 0h-62.08s-0.917333 184.362667 43.178666 203.242667l33.28-60.949333s-19.776-61.376-14.378666-142.293334z m-162.304 185.386667H142.570667c0 45.717333 38.656 49.749333 38.656 49.749333h19.754666c39.744 0 41.365333-45.44 41.365334-45.44V353.877333H181.674667V620.16z m208.768-129.621333h40.426666l-30.848 62.933333s-17.962667 35.392 10.794667 36.586667h67.136l26.837333-48.704h-33.557333a5.738667 5.738667 0 0 1-5.12-8.32l50.176-98.218667h-58.176l-3.434667 7.061333h-3.861333a5.717333 5.717333 0 0 1-5.12-8.32l41.770667-79.658666h-58.176l-49.642667 100.053333s-17.984 35.392 10.794667 36.586667z m8.832 119.125333s-7.424 0.64-12.373334-4.266667l-30.08 57.984a19.2 19.2 0 0 0 15.061334 6.741334h74.666666l31.914667-60.458667h-79.189333z" fill="#8a8a8a" p-id="10146"></path><path d="M624.810667 434.773333h38.378666v-61.738666h-137.28v61.738666h38.954667v176.853334H507.306667l-28.885334 58.282666h204.565334v-58.304h-58.176V434.773333z m275.029333 45.546667h-7.04v-39.936a67.712 67.712 0 0 0-67.733333-67.712h-23.381334v-18.858667H742.4v18.858667h-37.269333v60.522667h37.248v47.146666h-59.370667v60.522667h59.328v129.045333h59.328v-129.002666h81.685333c8 0 14.506667 6.506667 14.506667 14.506666v63.573334h-56.618667a50.901333 50.901333 0 0 0 50.901334 50.922666h15.317333a50.901333 50.901333 0 0 0 50.901333-50.901333v-80.064a58.474667 58.474667 0 0 0-58.496-58.624z m-98.133333-47.082667h21.333333c5.098667 0 9.216 4.117333 9.216 9.216v37.866667h-30.570667v-47.082667z" fill="#8a8a8a" p-id="10147"></path><path d="M957.568 402.389333a29.397333 29.397333 0 1 0-58.752 0v29.397334h29.397333c16.192 0 29.354667-13.162667 29.354667-29.397334z" fill="#8a8a8a" p-id="10148"></path></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/hugo-dev03/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/hugo-dev03/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/hugo-dev03/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/hugo-dev03/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/hugo-dev03/%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#211前趋图">2.1.1前趋图</a></li>
+        <li><a href="#212程序顺序执行">2.1.2程序顺序执行</a>
+          <ol>
+            <li><a href="#程序顺序执行">程序顺序执行</a></li>
+            <li><a href="#程序顺序执行特征">程序顺序执行特征</a></li>
+          </ol>
+        </li>
+        <li><a href="#213-程序并发执行">2.1.3 程序并发执行</a>
+          <ol>
+            <li><a href="#并行">并行：</a></li>
+            <li><a href="#并发执行特征">并发执行特征：</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#22-进程的描述">2.2 进程的描述</a>
+      <ol>
+        <li><a href="#221-进程的定义与特征">2.2.1 进程的定义与特征</a>
+          <ol>
+            <li><a href="#进程的定义">进程的定义：</a></li>
+            <li><a href="#进程特征">进程特征</a></li>
+          </ol>
+        </li>
+        <li><a href="#222-进程的基本状态与转换">2.2.2 进程的基本状态与转换</a>
+          <ol>
+            <li><a href="#1进程的-3-种基本状态">1．进程的 3 种基本状态</a></li>
+            <li><a href="#2进程-3-种基本状态间的转换">2．进程 3 种基本状态间的转换</a></li>
+            <li><a href="#3创建状态和终止状态">3．创建状态和终止状态</a></li>
+          </ol>
+        </li>
+        <li><a href="#223-挂起操作和进程状态的转换">2.2.3 挂起操作和进程状态的转换</a>
+          <ol>
+            <li><a href="#1挂起操作的引入">1．挂起操作的引入</a></li>
+            <li><a href="#2引入挂起操作后进程-3-个基本状态间的转换">2．引入挂起操作后进程 3 个基本状态间的转换</a></li>
+            <li><a href="#3引入挂起操作后进程-5-个基本状态间的转换">3．引入挂起操作后进程 5 个基本状态间的转换</a></li>
+          </ol>
+        </li>
+        <li><a href="#224-进程管理中的数据结构">2.2.4 进程管理中的数据结构</a>
+          <ol>
+            <li></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#23-进程控制">2.3 进程控制</a>
+      <ol>
+        <li><a href="#231-进程的创建">2.3.1 进程的创建</a>
+          <ol>
+            <li><a href="#1进程的层次结构">1．进程的层次结构</a></li>
+            <li><a href="#2进程图">2．进程图</a></li>
+            <li><a href="#3引起进程创建的事件">3．引起进程创建的事件</a></li>
+            <li><a href="#4进程的创建">4．进程的创建</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
+                <img src="/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911130525_hu8679078694530837807.png"
+                        srcset="/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911130525_hu8679078694530837807.png 800w, /hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911130525_hu14127273511670138492.png 1600w"
+                        width="800" 
+                        height="500" 
+                        loading="lazy"
+                        alt="Featured image of post 操作系统" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/hugo-dev03/categories/study/" >
+                Study
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Tillie is taking the operating system course in her junior year
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2024-09-11</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 1 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="第一章">第一章
+</h1><h1 id="第二章">第二章
+</h1><h3 id="211前趋图">2.1.1前趋图
+</h3><p>是有向无环图</p>
+<h3 id="212程序顺序执行">2.1.2程序顺序执行
+</h3><h4 id="程序顺序执行">程序顺序执行
+</h4><p>可用前趋图表示程序的顺序执行</p>
+<h4 id="程序顺序执行特征">程序顺序执行特征
+</h4><p>顺序性：严格按照顺序</p>
+<p>封闭性：不受外界影响</p>
+<p>可再现性：程序执行结果相同</p>
+<h3 id="213-程序并发执行">2.1.3 程序并发执行
+</h3><h4 id="并行">并行：
+</h4><p>只要不存在前趋关系就可以并行</p>
+<h4 id="并发执行特征">并发执行特征：
+</h4><p>间断性：“执行——暂停——执行”的活动规律</p>
+<p>失去封闭性：并发执行程序系统中的资源为它们所共享</p>
+<p>不可再现性：失去封闭性会失去可再现性</p>
+<h2 id="22-进程的描述">2.2 进程的描述
+</h2><h3 id="221-进程的定义与特征">2.2.1 进程的定义与特征
+</h3><h4 id="进程的定义">进程的定义：
+</h4><p>为了使程序可以并发执行，在OS中引入了“进程”</p>
+<h5 id="进程控制块pcb">进程控制块（PCB）：
+</h5><p>OS中配置的专门的数据结构</p>
+<p>描述进程的基本情况和活动过程，进而控制和管理进程。</p>
+<h5 id="进程实体进程映像简称进程">进程实体（进程映像），简称“进程”
+</h5><p>由程序段、相关的数据段和PCB构成。</p>
+<h6 id="创建进程">创建进程
+</h6><p>实质上是指创建进程的PCB</p>
+<h6 id="撤销进程">撤销进程
+</h6><p>实质上是指撤销进程的PCB</p>
+<h6 id="进程定义">进程定义
+</h6><p>较典型的定义有三种。。。</p>
+<h4 id="进程特征">进程特征
+</h4><h5 id="动态性">动态性
+</h5><p>进程由创建而产生，由调度而执行，由撤销而消亡</p>
+<h5 id="并发性">并发性
+</h5><p>指多个进程共存于内存中，且能在一段时间内同时执行。</p>
+<h5 id="独立性">独立性
+</h5><h5 id="异步性">异步性
+</h5><p>指进程是按异步方式运行的，即按各自独立的、不可预知的速度向前推 进。</p>
+<h3 id="222-进程的基本状态与转换">2.2.2 进程的基本状态与转换
+</h3><h4 id="1进程的-3-种基本状态">1．进程的 3 种基本状态
+</h4><h5 id="1就绪ready状态">（1）就绪（ready）状态
+</h5><p>进程已处于准备好执行的状态，即进程已获得除CPU外的所有资源，只要再获得CPU即可执行的准备状态</p>
+<h5 id="2执行running状态">（2）执行（running）状态
+</h5><p>进程获得CPU后其程序“正在执行”的状态</p>
+<h5 id="3阻塞block状态">（3）阻塞（block）状态
+</h5><p>由于发生某些事无法继续执行</p>
+<h4 id="2进程-3-种基本状态间的转换">2．进程 3 种基本状态间的转换
+</h4><p><img src="/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911111835.png"
+	width="501"
+	height="288"
+	srcset="/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911111835_hu400929057970792875.png 480w, /hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911111835_hu13619672219314541748.png 1024w"
+	loading="lazy"
+	
+		alt="微信图片_20240911111835"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="173"
+		data-flex-basis="417px"
+	
+></p>
+<h4 id="3创建状态和终止状态">3．创建状态和终止状态
+</h4><h5 id="1创建状态">（1）创建状态
+</h5><p>进程是由创建或新建产生的。</p>
+<h6 id="创建一个进程步骤">创建一个进程步骤
+</h6><h5 id="2终止状态">（2）终止状态
+</h5><h6 id="终止">终止
+</h6><p>1，自然终止</p>
+<p>2，无法克服错误</p>
+<p>3，OS终止</p>
+<p>4，其它有终止权的进程终止</p>
+<h6 id="进程终止步骤">进程终止步骤
+</h6><h3 id="223-挂起操作和进程状态的转换">2.2.3 挂起操作和进程状态的转换
+</h3><p>一个面向进程的重要操作。</p>
+<p>该进程 将被挂起，这意味着此时该进程处于静止状态。</p>
+<p>与挂起操作对应的操作是激活操作。</p>
+<h4 id="1挂起操作的引入">1．挂起操作的引入
+</h4><h4 id="2引入挂起操作后进程-3-个基本状态间的转换">2．引入挂起操作后进程 3 个基本状态间的转换
+</h4><h4 id="3引入挂起操作后进程-5-个基本状态间的转换">3．引入挂起操作后进程 5 个基本状态间的转换
+</h4><h3 id="224-进程管理中的数据结构">2.2.4 进程管理中的数据结构
+</h3><p>为了便于使用和管理计算机中的各类资源（包括硬件和信 息）；OS 作为计算机资源的管理者，为了协调诸多用户对系统中共享资源的使用，它还必须记录和查询 各种资源的使用情况及各类进程的运行情况等信息；</p>
+<h5 id="1os-中用于管理资源和控制进程的数据结构">1．OS 中用于管理资源和控制进程的数据结构
+</h5><h6 id="资源信息表和进程信息表">资源信息表和进程信息表
+</h6><p>在计算机系统中，对于每个资源和每个进程都设置了一个数据结构，用于表征其实体。我们称之为资源信息表和进程信息表。其中包含了资源和进程的标志、描述、状态等信息以及一 批指针。</p>
+<h6 id="4类os管理的控制表">4类OS管理的控制表
+</h6><p>OS管理的这些控制表一般可分为以下4类：内存表、设备表、文件表和用于进程管理的进程表（PCB）</p>
+<h5 id="2pcb-的作用">2．PCB 的作用
+</h5><p>PCB是OS为每一个进程专门定制的一个记录型数据结构（作为进程的一部分），便于系统描述和进程管理。</p>
+<p>PCB的作用是使一个在多道程序环境下不能独立运行的程序（含数据），成为一个能独立 运行的基本单位，即一个能与其他进程并发执行的进程。</p>
+<h6 id="1作为独立运行基本单位的标志">（1）作为独立运行基本单位的标志。
+</h6><p>配置了PCB表示程序（含数据）已是 一个能在多道程序环境下独立运行的、合法的基本单位，即具有了取得OS服务的权利。PCB已成为进程存在于系统中的 唯一标志。</p>
+<h6 id="2实现间断性运行方式">（2）实现间断性运行方式。
+</h6><p>有了PCB后，系统就可以将CPU现场信息保存在 被中断进程的PCB中，供该进程再次被调度运行而须恢复CPU现场信息时使用。</p>
+<h6 id="3提供进程管理所需要的信息">（3）提供进程管理所需要的信息。
+</h6><p>调度程序调度到某进程时，当进程需要访问文件系统中的文件或I/O设备时&hellip;&hellip;都需要借助PCB中的信息</p>
+<h6 id="4提供进程调度所需要的信息">（4）提供进程调度所需要的信息。
+</h6><h6 id="5实现与其他进程的同步与通信">（5）实现与其他进程的同步与通信。
+</h6><h5 id="3pcb-中的信息">3．PCB 中的信息
+</h5><h6 id="1进程标识符">（1）进程标识符。
+</h6><p>唯一的标志一个进程</p>
+<p>① 外部标识符。</p>
+<p>② 内部标识符。</p>
+<h6 id="2处理机状态处理机的上下文">（2）处理机状态。（处理机的上下文）
+</h6><p>主要是由处理机的各种寄存器中的内容组成的。</p>
+<h6 id="3进程调度信息">（3）进程调度信息。
+</h6><p>必须了解进程的状态以及有关进程调度的信息</p>
+<p>①进程状态</p>
+<p>②进程优先级</p>
+<p>③进程调度所需要的其他信息</p>
+<p>④事件</p>
+<h6 id="4进程控制信息">（4）进程控制信息。
+</h6><p>是指用于进程控制所必需的信息</p>
+<p>①程序和数据的地址</p>
+<p>②进程同步和通信机制</p>
+<p>③资源清单</p>
+<p>④链接指针</p>
+<h5 id="4pcb-的组织方式">4．PCB 的组织方式
+</h5><h6 id="1线性方式">（1）线性方式。
+</h6><p>查找效率低，适合少数据</p>
+<p><img src="/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911114727.png"
+	width="211"
+	height="252"
+	srcset="/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911114727_hu2830619328516293023.png 480w, /hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911114727_hu7027169445303260673.png 1024w"
+	loading="lazy"
+	
+		alt="微信图片_20240911114727"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="83"
+		data-flex-basis="200px"
+	
+></p>
+<p>平均查找次数：（n+1）/2 约等于 n/2 （n&raquo;1）</p>
+<h6 id="2链接方式">（2）链接方式。
+</h6><p>将具有相同状态的进程的PCB分别链接成一个队 列。这样即可形成就绪队列、若干个阻塞队列和空闲队列等。</p>
+<p><img src="/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115115.png"
+	width="430"
+	height="258"
+	srcset="/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115115_hu9652117574595571533.png 480w, /hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115115_hu7956009340350609894.png 1024w"
+	loading="lazy"
+	
+		alt="微信图片_20240911115115"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="166"
+		data-flex-basis="400px"
+	
+></p>
+<h6 id="3索引方式">（3）索引方式。
+</h6><p><strong>重点</strong></p>
+<p><img src="/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115211.png"
+	width="657"
+	height="336"
+	srcset="/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115211_hu4381302214973851060.png 480w, /hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115211_hu13883271620824141531.png 1024w"
+	loading="lazy"
+	
+		alt="微信图片_20240911115211"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="195"
+		data-flex-basis="469px"
+	
+></p>
+<h2 id="23-进程控制">2.3 进程控制
+</h2><h3 id="231-进程的创建">2.3.1 进程的创建
+</h3><h4 id="1进程的层次结构">1．进程的层次结构
+</h4><h5 id="父进程">父进程
+</h5><p>在OS中允许一个进程创建另一个进程。把创建进程的进程为父进程。</p>
+<h5 id="子进程">子进程
+</h5><p>在OS中允许一个进程创建另一个进程。被创建的进程为子进程</p>
+<h5 id="孙进程">孙进程
+</h5><p>子进程可以继续创建其自己的子 进程（即父进程的孙进程）</p>
+<h5 id="进程的层次结构">进程的层次结构
+</h5><p>父进程，子进程，孙进程&hellip;&hellip;形成了进程的层次结构</p>
+<h6 id="进程家族进程组">进程家族（进程组）
+</h6><p>在UNIX系统中，进程与其子孙 进程可以共同组成一个进程家族（进程组）</p>
+<h4 id="2进程图">2．进程图
+</h4><p>为了形象地描述一个进程的家族关系，引入了进程图</p>
+<p><img src="/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115733.png"
+	width="506"
+	height="280"
+	srcset="/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115733_hu7591875333172608757.png 480w, /hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115733_hu622818483741134237.png 1024w"
+	loading="lazy"
+	
+		alt="微信图片_20240911115733"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="180"
+		data-flex-basis="433px"
+	
+></p>
+<h4 id="3引起进程创建的事件">3．引起进程创建的事件
+</h4><h4 id="4进程的创建">4．进程的创建
+</h4>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/hugo-dev03/tags/study/">Study</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2024 Matilda-Ty
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/hugo-dev03/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

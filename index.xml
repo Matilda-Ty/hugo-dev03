@@ -7,7 +7,215 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Matilda-Ty</copyright>
-        <lastBuildDate>Mon, 09 Sep 2024 19:16:56 +0800</lastBuildDate><atom:link href="https://Matilda-Ty.github.io/hugo-dev03/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 11 Sep 2024 13:11:33 +0800</lastBuildDate><atom:link href="https://Matilda-Ty.github.io/hugo-dev03/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>操作系统</title>
+        <link>https://Matilda-Ty.github.io/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
+        <pubDate>Wed, 11 Sep 2024 13:11:33 +0800</pubDate>
+        
+        <guid>https://Matilda-Ty.github.io/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</guid>
+        <description>&lt;img src="https://Matilda-Ty.github.io/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911130525.png" alt="Featured image of post 操作系统" /&gt;&lt;h1 id=&#34;第一章&#34;&gt;第一章
+&lt;/h1&gt;&lt;h1 id=&#34;第二章&#34;&gt;第二章
+&lt;/h1&gt;&lt;h3 id=&#34;211前趋图&#34;&gt;2.1.1前趋图
+&lt;/h3&gt;&lt;p&gt;是有向无环图&lt;/p&gt;
+&lt;h3 id=&#34;212程序顺序执行&#34;&gt;2.1.2程序顺序执行
+&lt;/h3&gt;&lt;h4 id=&#34;程序顺序执行&#34;&gt;程序顺序执行
+&lt;/h4&gt;&lt;p&gt;可用前趋图表示程序的顺序执行&lt;/p&gt;
+&lt;h4 id=&#34;程序顺序执行特征&#34;&gt;程序顺序执行特征
+&lt;/h4&gt;&lt;p&gt;顺序性：严格按照顺序&lt;/p&gt;
+&lt;p&gt;封闭性：不受外界影响&lt;/p&gt;
+&lt;p&gt;可再现性：程序执行结果相同&lt;/p&gt;
+&lt;h3 id=&#34;213-程序并发执行&#34;&gt;2.1.3 程序并发执行
+&lt;/h3&gt;&lt;h4 id=&#34;并行&#34;&gt;并行：
+&lt;/h4&gt;&lt;p&gt;只要不存在前趋关系就可以并行&lt;/p&gt;
+&lt;h4 id=&#34;并发执行特征&#34;&gt;并发执行特征：
+&lt;/h4&gt;&lt;p&gt;间断性：“执行——暂停——执行”的活动规律&lt;/p&gt;
+&lt;p&gt;失去封闭性：并发执行程序系统中的资源为它们所共享&lt;/p&gt;
+&lt;p&gt;不可再现性：失去封闭性会失去可再现性&lt;/p&gt;
+&lt;h2 id=&#34;22-进程的描述&#34;&gt;2.2 进程的描述
+&lt;/h2&gt;&lt;h3 id=&#34;221-进程的定义与特征&#34;&gt;2.2.1 进程的定义与特征
+&lt;/h3&gt;&lt;h4 id=&#34;进程的定义&#34;&gt;进程的定义：
+&lt;/h4&gt;&lt;p&gt;为了使程序可以并发执行，在OS中引入了“进程”&lt;/p&gt;
+&lt;h5 id=&#34;进程控制块pcb&#34;&gt;进程控制块（PCB）：
+&lt;/h5&gt;&lt;p&gt;OS中配置的专门的数据结构&lt;/p&gt;
+&lt;p&gt;描述进程的基本情况和活动过程，进而控制和管理进程。&lt;/p&gt;
+&lt;h5 id=&#34;进程实体进程映像简称进程&#34;&gt;进程实体（进程映像），简称“进程”
+&lt;/h5&gt;&lt;p&gt;由程序段、相关的数据段和PCB构成。&lt;/p&gt;
+&lt;h6 id=&#34;创建进程&#34;&gt;创建进程
+&lt;/h6&gt;&lt;p&gt;实质上是指创建进程的PCB&lt;/p&gt;
+&lt;h6 id=&#34;撤销进程&#34;&gt;撤销进程
+&lt;/h6&gt;&lt;p&gt;实质上是指撤销进程的PCB&lt;/p&gt;
+&lt;h6 id=&#34;进程定义&#34;&gt;进程定义
+&lt;/h6&gt;&lt;p&gt;较典型的定义有三种。。。&lt;/p&gt;
+&lt;h4 id=&#34;进程特征&#34;&gt;进程特征
+&lt;/h4&gt;&lt;h5 id=&#34;动态性&#34;&gt;动态性
+&lt;/h5&gt;&lt;p&gt;进程由创建而产生，由调度而执行，由撤销而消亡&lt;/p&gt;
+&lt;h5 id=&#34;并发性&#34;&gt;并发性
+&lt;/h5&gt;&lt;p&gt;指多个进程共存于内存中，且能在一段时间内同时执行。&lt;/p&gt;
+&lt;h5 id=&#34;独立性&#34;&gt;独立性
+&lt;/h5&gt;&lt;h5 id=&#34;异步性&#34;&gt;异步性
+&lt;/h5&gt;&lt;p&gt;指进程是按异步方式运行的，即按各自独立的、不可预知的速度向前推 进。&lt;/p&gt;
+&lt;h3 id=&#34;222-进程的基本状态与转换&#34;&gt;2.2.2 进程的基本状态与转换
+&lt;/h3&gt;&lt;h4 id=&#34;1进程的-3-种基本状态&#34;&gt;1．进程的 3 种基本状态
+&lt;/h4&gt;&lt;h5 id=&#34;1就绪ready状态&#34;&gt;（1）就绪（ready）状态
+&lt;/h5&gt;&lt;p&gt;进程已处于准备好执行的状态，即进程已获得除CPU外的所有资源，只要再获得CPU即可执行的准备状态&lt;/p&gt;
+&lt;h5 id=&#34;2执行running状态&#34;&gt;（2）执行（running）状态
+&lt;/h5&gt;&lt;p&gt;进程获得CPU后其程序“正在执行”的状态&lt;/p&gt;
+&lt;h5 id=&#34;3阻塞block状态&#34;&gt;（3）阻塞（block）状态
+&lt;/h5&gt;&lt;p&gt;由于发生某些事无法继续执行&lt;/p&gt;
+&lt;h4 id=&#34;2进程-3-种基本状态间的转换&#34;&gt;2．进程 3 种基本状态间的转换
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911111835.png&#34;
+	width=&#34;501&#34;
+	height=&#34;288&#34;
+	srcset=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911111835_hu400929057970792875.png 480w, https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911111835_hu13619672219314541748.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;微信图片_20240911111835&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;173&#34;
+		data-flex-basis=&#34;417px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;3创建状态和终止状态&#34;&gt;3．创建状态和终止状态
+&lt;/h4&gt;&lt;h5 id=&#34;1创建状态&#34;&gt;（1）创建状态
+&lt;/h5&gt;&lt;p&gt;进程是由创建或新建产生的。&lt;/p&gt;
+&lt;h6 id=&#34;创建一个进程步骤&#34;&gt;创建一个进程步骤
+&lt;/h6&gt;&lt;h5 id=&#34;2终止状态&#34;&gt;（2）终止状态
+&lt;/h5&gt;&lt;h6 id=&#34;终止&#34;&gt;终止
+&lt;/h6&gt;&lt;p&gt;1，自然终止&lt;/p&gt;
+&lt;p&gt;2，无法克服错误&lt;/p&gt;
+&lt;p&gt;3，OS终止&lt;/p&gt;
+&lt;p&gt;4，其它有终止权的进程终止&lt;/p&gt;
+&lt;h6 id=&#34;进程终止步骤&#34;&gt;进程终止步骤
+&lt;/h6&gt;&lt;h3 id=&#34;223-挂起操作和进程状态的转换&#34;&gt;2.2.3 挂起操作和进程状态的转换
+&lt;/h3&gt;&lt;p&gt;一个面向进程的重要操作。&lt;/p&gt;
+&lt;p&gt;该进程 将被挂起，这意味着此时该进程处于静止状态。&lt;/p&gt;
+&lt;p&gt;与挂起操作对应的操作是激活操作。&lt;/p&gt;
+&lt;h4 id=&#34;1挂起操作的引入&#34;&gt;1．挂起操作的引入
+&lt;/h4&gt;&lt;h4 id=&#34;2引入挂起操作后进程-3-个基本状态间的转换&#34;&gt;2．引入挂起操作后进程 3 个基本状态间的转换
+&lt;/h4&gt;&lt;h4 id=&#34;3引入挂起操作后进程-5-个基本状态间的转换&#34;&gt;3．引入挂起操作后进程 5 个基本状态间的转换
+&lt;/h4&gt;&lt;h3 id=&#34;224-进程管理中的数据结构&#34;&gt;2.2.4 进程管理中的数据结构
+&lt;/h3&gt;&lt;p&gt;为了便于使用和管理计算机中的各类资源（包括硬件和信 息）；OS 作为计算机资源的管理者，为了协调诸多用户对系统中共享资源的使用，它还必须记录和查询 各种资源的使用情况及各类进程的运行情况等信息；&lt;/p&gt;
+&lt;h5 id=&#34;1os-中用于管理资源和控制进程的数据结构&#34;&gt;1．OS 中用于管理资源和控制进程的数据结构
+&lt;/h5&gt;&lt;h6 id=&#34;资源信息表和进程信息表&#34;&gt;资源信息表和进程信息表
+&lt;/h6&gt;&lt;p&gt;在计算机系统中，对于每个资源和每个进程都设置了一个数据结构，用于表征其实体。我们称之为资源信息表和进程信息表。其中包含了资源和进程的标志、描述、状态等信息以及一 批指针。&lt;/p&gt;
+&lt;h6 id=&#34;4类os管理的控制表&#34;&gt;4类OS管理的控制表
+&lt;/h6&gt;&lt;p&gt;OS管理的这些控制表一般可分为以下4类：内存表、设备表、文件表和用于进程管理的进程表（PCB）&lt;/p&gt;
+&lt;h5 id=&#34;2pcb-的作用&#34;&gt;2．PCB 的作用
+&lt;/h5&gt;&lt;p&gt;PCB是OS为每一个进程专门定制的一个记录型数据结构（作为进程的一部分），便于系统描述和进程管理。&lt;/p&gt;
+&lt;p&gt;PCB的作用是使一个在多道程序环境下不能独立运行的程序（含数据），成为一个能独立 运行的基本单位，即一个能与其他进程并发执行的进程。&lt;/p&gt;
+&lt;h6 id=&#34;1作为独立运行基本单位的标志&#34;&gt;（1）作为独立运行基本单位的标志。
+&lt;/h6&gt;&lt;p&gt;配置了PCB表示程序（含数据）已是 一个能在多道程序环境下独立运行的、合法的基本单位，即具有了取得OS服务的权利。PCB已成为进程存在于系统中的 唯一标志。&lt;/p&gt;
+&lt;h6 id=&#34;2实现间断性运行方式&#34;&gt;（2）实现间断性运行方式。
+&lt;/h6&gt;&lt;p&gt;有了PCB后，系统就可以将CPU现场信息保存在 被中断进程的PCB中，供该进程再次被调度运行而须恢复CPU现场信息时使用。&lt;/p&gt;
+&lt;h6 id=&#34;3提供进程管理所需要的信息&#34;&gt;（3）提供进程管理所需要的信息。
+&lt;/h6&gt;&lt;p&gt;调度程序调度到某进程时，当进程需要访问文件系统中的文件或I/O设备时&amp;hellip;&amp;hellip;都需要借助PCB中的信息&lt;/p&gt;
+&lt;h6 id=&#34;4提供进程调度所需要的信息&#34;&gt;（4）提供进程调度所需要的信息。
+&lt;/h6&gt;&lt;h6 id=&#34;5实现与其他进程的同步与通信&#34;&gt;（5）实现与其他进程的同步与通信。
+&lt;/h6&gt;&lt;h5 id=&#34;3pcb-中的信息&#34;&gt;3．PCB 中的信息
+&lt;/h5&gt;&lt;h6 id=&#34;1进程标识符&#34;&gt;（1）进程标识符。
+&lt;/h6&gt;&lt;p&gt;唯一的标志一个进程&lt;/p&gt;
+&lt;p&gt;① 外部标识符。&lt;/p&gt;
+&lt;p&gt;② 内部标识符。&lt;/p&gt;
+&lt;h6 id=&#34;2处理机状态处理机的上下文&#34;&gt;（2）处理机状态。（处理机的上下文）
+&lt;/h6&gt;&lt;p&gt;主要是由处理机的各种寄存器中的内容组成的。&lt;/p&gt;
+&lt;h6 id=&#34;3进程调度信息&#34;&gt;（3）进程调度信息。
+&lt;/h6&gt;&lt;p&gt;必须了解进程的状态以及有关进程调度的信息&lt;/p&gt;
+&lt;p&gt;①进程状态&lt;/p&gt;
+&lt;p&gt;②进程优先级&lt;/p&gt;
+&lt;p&gt;③进程调度所需要的其他信息&lt;/p&gt;
+&lt;p&gt;④事件&lt;/p&gt;
+&lt;h6 id=&#34;4进程控制信息&#34;&gt;（4）进程控制信息。
+&lt;/h6&gt;&lt;p&gt;是指用于进程控制所必需的信息&lt;/p&gt;
+&lt;p&gt;①程序和数据的地址&lt;/p&gt;
+&lt;p&gt;②进程同步和通信机制&lt;/p&gt;
+&lt;p&gt;③资源清单&lt;/p&gt;
+&lt;p&gt;④链接指针&lt;/p&gt;
+&lt;h5 id=&#34;4pcb-的组织方式&#34;&gt;4．PCB 的组织方式
+&lt;/h5&gt;&lt;h6 id=&#34;1线性方式&#34;&gt;（1）线性方式。
+&lt;/h6&gt;&lt;p&gt;查找效率低，适合少数据&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911114727.png&#34;
+	width=&#34;211&#34;
+	height=&#34;252&#34;
+	srcset=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911114727_hu2830619328516293023.png 480w, https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911114727_hu7027169445303260673.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;微信图片_20240911114727&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;83&#34;
+		data-flex-basis=&#34;200px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;平均查找次数：（n+1）/2 约等于 n/2 （n&amp;raquo;1）&lt;/p&gt;
+&lt;h6 id=&#34;2链接方式&#34;&gt;（2）链接方式。
+&lt;/h6&gt;&lt;p&gt;将具有相同状态的进程的PCB分别链接成一个队 列。这样即可形成就绪队列、若干个阻塞队列和空闲队列等。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115115.png&#34;
+	width=&#34;430&#34;
+	height=&#34;258&#34;
+	srcset=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115115_hu9652117574595571533.png 480w, https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115115_hu7956009340350609894.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;微信图片_20240911115115&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;166&#34;
+		data-flex-basis=&#34;400px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h6 id=&#34;3索引方式&#34;&gt;（3）索引方式。
+&lt;/h6&gt;&lt;p&gt;&lt;strong&gt;重点&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115211.png&#34;
+	width=&#34;657&#34;
+	height=&#34;336&#34;
+	srcset=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115211_hu4381302214973851060.png 480w, https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115211_hu13883271620824141531.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;微信图片_20240911115211&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;195&#34;
+		data-flex-basis=&#34;469px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;23-进程控制&#34;&gt;2.3 进程控制
+&lt;/h2&gt;&lt;h3 id=&#34;231-进程的创建&#34;&gt;2.3.1 进程的创建
+&lt;/h3&gt;&lt;h4 id=&#34;1进程的层次结构&#34;&gt;1．进程的层次结构
+&lt;/h4&gt;&lt;h5 id=&#34;父进程&#34;&gt;父进程
+&lt;/h5&gt;&lt;p&gt;在OS中允许一个进程创建另一个进程。把创建进程的进程为父进程。&lt;/p&gt;
+&lt;h5 id=&#34;子进程&#34;&gt;子进程
+&lt;/h5&gt;&lt;p&gt;在OS中允许一个进程创建另一个进程。被创建的进程为子进程&lt;/p&gt;
+&lt;h5 id=&#34;孙进程&#34;&gt;孙进程
+&lt;/h5&gt;&lt;p&gt;子进程可以继续创建其自己的子 进程（即父进程的孙进程）&lt;/p&gt;
+&lt;h5 id=&#34;进程的层次结构&#34;&gt;进程的层次结构
+&lt;/h5&gt;&lt;p&gt;父进程，子进程，孙进程&amp;hellip;&amp;hellip;形成了进程的层次结构&lt;/p&gt;
+&lt;h6 id=&#34;进程家族进程组&#34;&gt;进程家族（进程组）
+&lt;/h6&gt;&lt;p&gt;在UNIX系统中，进程与其子孙 进程可以共同组成一个进程家族（进程组）&lt;/p&gt;
+&lt;h4 id=&#34;2进程图&#34;&gt;2．进程图
+&lt;/h4&gt;&lt;p&gt;为了形象地描述一个进程的家族关系，引入了进程图&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115733.png&#34;
+	width=&#34;506&#34;
+	height=&#34;280&#34;
+	srcset=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115733_hu7591875333172608757.png 480w, https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115733_hu622818483741134237.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;微信图片_20240911115733&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;180&#34;
+		data-flex-basis=&#34;433px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;3引起进程创建的事件&#34;&gt;3．引起进程创建的事件
+&lt;/h4&gt;&lt;h4 id=&#34;4进程的创建&#34;&gt;4．进程的创建
+&lt;/h4&gt;</description>
+        </item>
+        <item>
         <title>Hugo&#43;github博客开发</title>
         <link>https://Matilda-Ty.github.io/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/</link>
         <pubDate>Mon, 09 Sep 2024 19:16:56 +0800</pubDate>
@@ -631,221 +839,6 @@ $$&lt;/p&gt;</description>
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
-        </item>
-        <item>
-        <title></title>
-        <link>https://Matilda-Ty.github.io/hugo-dev03/p/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://Matilda-Ty.github.io/hugo-dev03/p/</guid>
-        <description>&lt;p&gt;title = &amp;lsquo;操作系统&amp;rsquo;
-date = 2024-09-11
-draft = true
-description = &amp;ldquo;Tillie successfully deployed his website for the first time&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;categories = [ &amp;ldquo;Study&amp;rdquo; ]&lt;/p&gt;
-&lt;p&gt;tags = [ &amp;ldquo;Study&amp;rdquo;, ]&lt;/p&gt;
-&lt;p&gt;image = &amp;ldquo;微信图片_20240911130525.png&amp;rdquo;&lt;/p&gt;
-&lt;h1 id=&#34;第一章&#34;&gt;第一章
-&lt;/h1&gt;&lt;h1 id=&#34;第二章&#34;&gt;第二章
-&lt;/h1&gt;&lt;h3 id=&#34;211前趋图&#34;&gt;2.1.1前趋图
-&lt;/h3&gt;&lt;p&gt;是有向无环图&lt;/p&gt;
-&lt;h3 id=&#34;212程序顺序执行&#34;&gt;2.1.2程序顺序执行
-&lt;/h3&gt;&lt;h4 id=&#34;程序顺序执行&#34;&gt;程序顺序执行
-&lt;/h4&gt;&lt;p&gt;可用前趋图表示程序的顺序执行&lt;/p&gt;
-&lt;h4 id=&#34;程序顺序执行特征&#34;&gt;程序顺序执行特征
-&lt;/h4&gt;&lt;p&gt;顺序性：严格按照顺序&lt;/p&gt;
-&lt;p&gt;封闭性：不受外界影响&lt;/p&gt;
-&lt;p&gt;可再现性：程序执行结果相同&lt;/p&gt;
-&lt;h3 id=&#34;213-程序并发执行&#34;&gt;2.1.3 程序并发执行
-&lt;/h3&gt;&lt;h4 id=&#34;并行&#34;&gt;并行：
-&lt;/h4&gt;&lt;p&gt;只要不存在前趋关系就可以并行&lt;/p&gt;
-&lt;h4 id=&#34;并发执行特征&#34;&gt;并发执行特征：
-&lt;/h4&gt;&lt;p&gt;间断性：“执行——暂停——执行”的活动规律&lt;/p&gt;
-&lt;p&gt;失去封闭性：并发执行程序系统中的资源为它们所共享&lt;/p&gt;
-&lt;p&gt;不可再现性：失去封闭性会失去可再现性&lt;/p&gt;
-&lt;h2 id=&#34;22-进程的描述&#34;&gt;2.2 进程的描述
-&lt;/h2&gt;&lt;h3 id=&#34;221-进程的定义与特征&#34;&gt;2.2.1 进程的定义与特征
-&lt;/h3&gt;&lt;h4 id=&#34;进程的定义&#34;&gt;进程的定义：
-&lt;/h4&gt;&lt;p&gt;为了使程序可以并发执行，在OS中引入了“进程”&lt;/p&gt;
-&lt;h5 id=&#34;进程控制块pcb&#34;&gt;进程控制块（PCB）：
-&lt;/h5&gt;&lt;p&gt;OS中配置的专门的数据结构&lt;/p&gt;
-&lt;p&gt;描述进程的基本情况和活动过程，进而控制和管理进程。&lt;/p&gt;
-&lt;h5 id=&#34;进程实体进程映像简称进程&#34;&gt;进程实体（进程映像），简称“进程”
-&lt;/h5&gt;&lt;p&gt;由程序段、相关的数据段和PCB构成。&lt;/p&gt;
-&lt;h6 id=&#34;创建进程&#34;&gt;创建进程
-&lt;/h6&gt;&lt;p&gt;实质上是指创建进程的PCB&lt;/p&gt;
-&lt;h6 id=&#34;撤销进程&#34;&gt;撤销进程
-&lt;/h6&gt;&lt;p&gt;实质上是指撤销进程的PCB&lt;/p&gt;
-&lt;h6 id=&#34;进程定义&#34;&gt;进程定义
-&lt;/h6&gt;&lt;p&gt;较典型的定义有三种。。。&lt;/p&gt;
-&lt;h4 id=&#34;进程特征&#34;&gt;进程特征
-&lt;/h4&gt;&lt;h5 id=&#34;动态性&#34;&gt;动态性
-&lt;/h5&gt;&lt;p&gt;进程由创建而产生，由调度而执行，由撤销而消亡&lt;/p&gt;
-&lt;h5 id=&#34;并发性&#34;&gt;并发性
-&lt;/h5&gt;&lt;p&gt;指多个进程共存于内存中，且能在一段时间内同时执行。&lt;/p&gt;
-&lt;h5 id=&#34;独立性&#34;&gt;独立性
-&lt;/h5&gt;&lt;h5 id=&#34;异步性&#34;&gt;异步性
-&lt;/h5&gt;&lt;p&gt;指进程是按异步方式运行的，即按各自独立的、不可预知的速度向前推 进。&lt;/p&gt;
-&lt;h3 id=&#34;222-进程的基本状态与转换&#34;&gt;2.2.2 进程的基本状态与转换
-&lt;/h3&gt;&lt;h4 id=&#34;1进程的-3-种基本状态&#34;&gt;1．进程的 3 种基本状态
-&lt;/h4&gt;&lt;h5 id=&#34;1就绪ready状态&#34;&gt;（1）就绪（ready）状态
-&lt;/h5&gt;&lt;p&gt;进程已处于准备好执行的状态，即进程已获得除CPU外的所有资源，只要再获得CPU即可执行的准备状态&lt;/p&gt;
-&lt;h5 id=&#34;2执行running状态&#34;&gt;（2）执行（running）状态
-&lt;/h5&gt;&lt;p&gt;进程获得CPU后其程序“正在执行”的状态&lt;/p&gt;
-&lt;h5 id=&#34;3阻塞block状态&#34;&gt;（3）阻塞（block）状态
-&lt;/h5&gt;&lt;p&gt;由于发生某些事无法继续执行&lt;/p&gt;
-&lt;h4 id=&#34;2进程-3-种基本状态间的转换&#34;&gt;2．进程 3 种基本状态间的转换
-&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911111835.png&#34;
-	width=&#34;501&#34;
-	height=&#34;288&#34;
-	srcset=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911111835_hu400929057970792875.png 480w, https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911111835_hu13619672219314541748.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;微信图片_20240911111835&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;173&#34;
-		data-flex-basis=&#34;417px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h4 id=&#34;3创建状态和终止状态&#34;&gt;3．创建状态和终止状态
-&lt;/h4&gt;&lt;h5 id=&#34;1创建状态&#34;&gt;（1）创建状态
-&lt;/h5&gt;&lt;p&gt;进程是由创建或新建产生的。&lt;/p&gt;
-&lt;h6 id=&#34;创建一个进程步骤&#34;&gt;创建一个进程步骤
-&lt;/h6&gt;&lt;h5 id=&#34;2终止状态&#34;&gt;（2）终止状态
-&lt;/h5&gt;&lt;h6 id=&#34;终止&#34;&gt;终止
-&lt;/h6&gt;&lt;p&gt;1，自然终止&lt;/p&gt;
-&lt;p&gt;2，无法克服错误&lt;/p&gt;
-&lt;p&gt;3，OS终止&lt;/p&gt;
-&lt;p&gt;4，其它有终止权的进程终止&lt;/p&gt;
-&lt;h6 id=&#34;进程终止步骤&#34;&gt;进程终止步骤
-&lt;/h6&gt;&lt;h3 id=&#34;223-挂起操作和进程状态的转换&#34;&gt;2.2.3 挂起操作和进程状态的转换
-&lt;/h3&gt;&lt;p&gt;一个面向进程的重要操作。&lt;/p&gt;
-&lt;p&gt;该进程 将被挂起，这意味着此时该进程处于静止状态。&lt;/p&gt;
-&lt;p&gt;与挂起操作对应的操作是激活操作。&lt;/p&gt;
-&lt;h4 id=&#34;1挂起操作的引入&#34;&gt;1．挂起操作的引入
-&lt;/h4&gt;&lt;h4 id=&#34;2引入挂起操作后进程-3-个基本状态间的转换&#34;&gt;2．引入挂起操作后进程 3 个基本状态间的转换
-&lt;/h4&gt;&lt;h4 id=&#34;3引入挂起操作后进程-5-个基本状态间的转换&#34;&gt;3．引入挂起操作后进程 5 个基本状态间的转换
-&lt;/h4&gt;&lt;h3 id=&#34;224-进程管理中的数据结构&#34;&gt;2.2.4 进程管理中的数据结构
-&lt;/h3&gt;&lt;p&gt;为了便于使用和管理计算机中的各类资源（包括硬件和信 息）；OS 作为计算机资源的管理者，为了协调诸多用户对系统中共享资源的使用，它还必须记录和查询 各种资源的使用情况及各类进程的运行情况等信息；&lt;/p&gt;
-&lt;h5 id=&#34;1os-中用于管理资源和控制进程的数据结构&#34;&gt;1．OS 中用于管理资源和控制进程的数据结构
-&lt;/h5&gt;&lt;h6 id=&#34;资源信息表和进程信息表&#34;&gt;资源信息表和进程信息表
-&lt;/h6&gt;&lt;p&gt;在计算机系统中，对于每个资源和每个进程都设置了一个数据结构，用于表征其实体。我们称之为资源信息表和进程信息表。其中包含了资源和进程的标志、描述、状态等信息以及一 批指针。&lt;/p&gt;
-&lt;h6 id=&#34;4类os管理的控制表&#34;&gt;4类OS管理的控制表
-&lt;/h6&gt;&lt;p&gt;OS管理的这些控制表一般可分为以下4类：内存表、设备表、文件表和用于进程管理的进程表（PCB）&lt;/p&gt;
-&lt;h5 id=&#34;2pcb-的作用&#34;&gt;2．PCB 的作用
-&lt;/h5&gt;&lt;p&gt;PCB是OS为每一个进程专门定制的一个记录型数据结构（作为进程的一部分），便于系统描述和进程管理。&lt;/p&gt;
-&lt;p&gt;PCB的作用是使一个在多道程序环境下不能独立运行的程序（含数据），成为一个能独立 运行的基本单位，即一个能与其他进程并发执行的进程。&lt;/p&gt;
-&lt;h6 id=&#34;1作为独立运行基本单位的标志&#34;&gt;（1）作为独立运行基本单位的标志。
-&lt;/h6&gt;&lt;p&gt;配置了PCB表示程序（含数据）已是 一个能在多道程序环境下独立运行的、合法的基本单位，即具有了取得OS服务的权利。PCB已成为进程存在于系统中的 唯一标志。&lt;/p&gt;
-&lt;h6 id=&#34;2实现间断性运行方式&#34;&gt;（2）实现间断性运行方式。
-&lt;/h6&gt;&lt;p&gt;有了PCB后，系统就可以将CPU现场信息保存在 被中断进程的PCB中，供该进程再次被调度运行而须恢复CPU现场信息时使用。&lt;/p&gt;
-&lt;h6 id=&#34;3提供进程管理所需要的信息&#34;&gt;（3）提供进程管理所需要的信息。
-&lt;/h6&gt;&lt;p&gt;调度程序调度到某进程时，当进程需要访问文件系统中的文件或I/O设备时&amp;hellip;&amp;hellip;都需要借助PCB中的信息&lt;/p&gt;
-&lt;h6 id=&#34;4提供进程调度所需要的信息&#34;&gt;（4）提供进程调度所需要的信息。
-&lt;/h6&gt;&lt;h6 id=&#34;5实现与其他进程的同步与通信&#34;&gt;（5）实现与其他进程的同步与通信。
-&lt;/h6&gt;&lt;h5 id=&#34;3pcb-中的信息&#34;&gt;3．PCB 中的信息
-&lt;/h5&gt;&lt;h6 id=&#34;1进程标识符&#34;&gt;（1）进程标识符。
-&lt;/h6&gt;&lt;p&gt;唯一的标志一个进程&lt;/p&gt;
-&lt;p&gt;① 外部标识符。&lt;/p&gt;
-&lt;p&gt;② 内部标识符。&lt;/p&gt;
-&lt;h6 id=&#34;2处理机状态处理机的上下文&#34;&gt;（2）处理机状态。（处理机的上下文）
-&lt;/h6&gt;&lt;p&gt;主要是由处理机的各种寄存器中的内容组成的。&lt;/p&gt;
-&lt;h6 id=&#34;3进程调度信息&#34;&gt;（3）进程调度信息。
-&lt;/h6&gt;&lt;p&gt;必须了解进程的状态以及有关进程调度的信息&lt;/p&gt;
-&lt;p&gt;①进程状态&lt;/p&gt;
-&lt;p&gt;②进程优先级&lt;/p&gt;
-&lt;p&gt;③进程调度所需要的其他信息&lt;/p&gt;
-&lt;p&gt;④事件&lt;/p&gt;
-&lt;h6 id=&#34;4进程控制信息&#34;&gt;（4）进程控制信息。
-&lt;/h6&gt;&lt;p&gt;是指用于进程控制所必需的信息&lt;/p&gt;
-&lt;p&gt;①程序和数据的地址&lt;/p&gt;
-&lt;p&gt;②进程同步和通信机制&lt;/p&gt;
-&lt;p&gt;③资源清单&lt;/p&gt;
-&lt;p&gt;④链接指针&lt;/p&gt;
-&lt;h5 id=&#34;4pcb-的组织方式&#34;&gt;4．PCB 的组织方式
-&lt;/h5&gt;&lt;h6 id=&#34;1线性方式&#34;&gt;（1）线性方式。
-&lt;/h6&gt;&lt;p&gt;查找效率低，适合少数据&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911114727.png&#34;
-	width=&#34;211&#34;
-	height=&#34;252&#34;
-	srcset=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911114727_hu2830619328516293023.png 480w, https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911114727_hu7027169445303260673.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;微信图片_20240911114727&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;83&#34;
-		data-flex-basis=&#34;200px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;平均查找次数：（n+1）/2 约等于 n/2 （n&amp;raquo;1）&lt;/p&gt;
-&lt;h6 id=&#34;2链接方式&#34;&gt;（2）链接方式。
-&lt;/h6&gt;&lt;p&gt;将具有相同状态的进程的PCB分别链接成一个队 列。这样即可形成就绪队列、若干个阻塞队列和空闲队列等。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115115.png&#34;
-	width=&#34;430&#34;
-	height=&#34;258&#34;
-	srcset=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115115_hu9652117574595571533.png 480w, https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115115_hu7956009340350609894.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;微信图片_20240911115115&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;166&#34;
-		data-flex-basis=&#34;400px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h6 id=&#34;3索引方式&#34;&gt;（3）索引方式。
-&lt;/h6&gt;&lt;p&gt;&lt;strong&gt;重点&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115211.png&#34;
-	width=&#34;657&#34;
-	height=&#34;336&#34;
-	srcset=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115211_hu4381302214973851060.png 480w, https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115211_hu13883271620824141531.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;微信图片_20240911115211&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;195&#34;
-		data-flex-basis=&#34;469px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;23-进程控制&#34;&gt;2.3 进程控制
-&lt;/h2&gt;&lt;h3 id=&#34;231-进程的创建&#34;&gt;2.3.1 进程的创建
-&lt;/h3&gt;&lt;h4 id=&#34;1进程的层次结构&#34;&gt;1．进程的层次结构
-&lt;/h4&gt;&lt;h5 id=&#34;父进程&#34;&gt;父进程
-&lt;/h5&gt;&lt;p&gt;在OS中允许一个进程创建另一个进程。把创建进程的进程为父进程。&lt;/p&gt;
-&lt;h5 id=&#34;子进程&#34;&gt;子进程
-&lt;/h5&gt;&lt;p&gt;在OS中允许一个进程创建另一个进程。被创建的进程为子进程&lt;/p&gt;
-&lt;h5 id=&#34;孙进程&#34;&gt;孙进程
-&lt;/h5&gt;&lt;p&gt;子进程可以继续创建其自己的子 进程（即父进程的孙进程）&lt;/p&gt;
-&lt;h5 id=&#34;进程的层次结构&#34;&gt;进程的层次结构
-&lt;/h5&gt;&lt;p&gt;父进程，子进程，孙进程&amp;hellip;&amp;hellip;形成了进程的层次结构&lt;/p&gt;
-&lt;h6 id=&#34;进程家族进程组&#34;&gt;进程家族（进程组）
-&lt;/h6&gt;&lt;p&gt;在UNIX系统中，进程与其子孙 进程可以共同组成一个进程家族（进程组）&lt;/p&gt;
-&lt;h4 id=&#34;2进程图&#34;&gt;2．进程图
-&lt;/h4&gt;&lt;p&gt;为了形象地描述一个进程的家族关系，引入了进程图&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115733.png&#34;
-	width=&#34;506&#34;
-	height=&#34;280&#34;
-	srcset=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115733_hu7591875333172608757.png 480w, https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240911115733_hu622818483741134237.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;微信图片_20240911115733&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;180&#34;
-		data-flex-basis=&#34;433px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h4 id=&#34;3引起进程创建的事件&#34;&gt;3．引起进程创建的事件
-&lt;/h4&gt;&lt;h4 id=&#34;4进程的创建&#34;&gt;4．进程的创建
-&lt;/h4&gt;</description>
         </item>
         <item>
         <title></title>
