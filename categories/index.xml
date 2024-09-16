@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Matilda-Ty</copyright>
-        <lastBuildDate>Wed, 11 Sep 2024 13:11:33 +0800</lastBuildDate><atom:link href="https://Matilda-Ty.github.io/hugo-dev03/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 16 Sep 2024 16:10:47 +0800</lastBuildDate><atom:link href="https://Matilda-Ty.github.io/hugo-dev03/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Sylus</title>
+        <link>https://Matilda-Ty.github.io/hugo-dev03/categories/sylus/</link>
+        <pubDate>Mon, 16 Sep 2024 16:10:47 +0800</pubDate>
+        
+        <guid>https://Matilda-Ty.github.io/hugo-dev03/categories/sylus/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Study</title>
         <link>https://Matilda-Ty.github.io/hugo-dev03/categories/study/</link>
         <pubDate>Wed, 11 Sep 2024 13:11:33 +0800</pubDate>
@@ -21,14 +29,6 @@
         <pubDate>Mon, 09 Sep 2024 19:16:56 +0800</pubDate>
         
         <guid>https://Matilda-Ty.github.io/hugo-dev03/categories/tillie/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Sylus</title>
-        <link>https://Matilda-Ty.github.io/hugo-dev03/categories/sylus/</link>
-        <pubDate>Mon, 09 Sep 2024 16:56:37 +0800</pubDate>
-        
-        <guid>https://Matilda-Ty.github.io/hugo-dev03/categories/sylus/</guid>
         <description></description>
         </item>
         <item>
