@@ -765,7 +765,27 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;image = &amp;#34;与文本存储在同一个文件夹的图片文件名.jpg&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;&lt;h1 id=&#34;typora与hugo图片路径引用不一致问题&#34;&gt;Typora与Hugo图片路径引用不一致问题
+&lt;/h1&gt;&lt;h2 id=&#34;问题&#34;&gt;问题
+&lt;/h2&gt;&lt;p&gt;对图片进行分类，路径改变导致push到github上图片无法显示&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241003134437.png&#34;
+	width=&#34;1420&#34;
+	height=&#34;782&#34;
+	srcset=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241003134437_hu13526170951793756384.png 480w, https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241003134437_hu5951219495252115556.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;微信图片_20241003134437&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;181&#34;
+		data-flex-basis=&#34;435px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;解决办法&#34;&gt;解决办法
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/liumylay/articles/17936688.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Typora与Hugo图片路径引用不一致问题 - Silencelay - 博客园 (cnblogs.com)&lt;/a&gt;&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>Tillie</title>
