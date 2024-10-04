@@ -20,7 +20,16 @@
 &lt;p&gt;没有输出&lt;/p&gt;
 &lt;p&gt;一个人默默完成，默默咀嚼自己的快乐&lt;/p&gt;
 &lt;p&gt;可在发上网站后，我意识到有什么东西被记录了，被“某个人”记住了。我很开心。&lt;/p&gt;
-</description>
+&lt;h3 id=&#34;29号&#34;&gt;29号
+&lt;/h3&gt;&lt;h4 id=&#34;下午&#34;&gt;下午
+&lt;/h4&gt;&lt;p&gt;写笔记真的好用 今天介绍潮剧真又唤起我的家乡自豪感和归属感。虽然是chat的，但是我要把它写到我的日记里&lt;/p&gt;
+&lt;h4 id=&#34;晚上&#34;&gt;晚上
+&lt;/h4&gt;&lt;p&gt;今晚龟骨开会 我认为我终于是结束了在这边的“露脸”工作 我也感伤一下 听到唐哥的发言“因为龟骨是一个大家庭”我想起了大一那会。我迷茫懵懂却又不主动，当时过分依赖龟骨，期盼龟骨可以给我带来一些成果，于是功利性地来却又遗憾地“走”。
+现在要准备考研了。我希望无论结果如何这个过程我要去获得成长（真正的成长）。我要把我的成长说给大家听
+其实现在才发现，我错过了多少在大家面前闪闪发光的机会&lt;/p&gt;
+&lt;h2 id=&#34;10月&#34;&gt;10月
+&lt;/h2&gt;&lt;h3 id=&#34;4号&#34;&gt;4号
+&lt;/h3&gt;</description>
         </item>
         <item>
         <title>操作系统</title>
@@ -387,9 +396,19 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;image = &amp;#34;与文本存储在同一个文件夹的图片文件名.jpg&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;插入视频&#34;&gt;插入视频
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &amp;lt;video src=&amp;#34;视频名称.mp4&amp;#34; autoplay=&amp;#34;true&amp;#34; controls=&amp;#34;controls&amp;#34; width=&amp;#34;820&amp;#34; height=&amp;#34;500&amp;#34;&amp;gt;&amp;lt;/video&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;typora与hugo图片路径引用不一致问题&#34;&gt;Typora与Hugo图片路径引用不一致问题
 &lt;/h1&gt;&lt;h2 id=&#34;问题&#34;&gt;问题
 &lt;/h2&gt;&lt;p&gt;对图片进行分类，路径改变导致push到github上图片无法显示&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本地测试时可以看到照片正确显现，但是push到github上打开网站后就无法显示图片&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241003134437.png&#34;
 	width=&#34;1420&#34;
 	height=&#34;782&#34;
@@ -407,6 +426,23 @@
 &lt;h2 id=&#34;解决办法&#34;&gt;解决办法
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/liumylay/articles/17936688.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Typora与Hugo图片路径引用不一致问题 - Silencelay - 博客园 (cnblogs.com)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/weixin_52836217/article/details/139797172&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;(已解决) Github无法显示图像问题_github不显示图片-CSDN博客&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;最后没有解决，把图片改名移回原文件夹&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241003145619.png&#34;
+	width=&#34;1420&#34;
+	height=&#34;795&#34;
+	srcset=&#34;https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241003145619_hu11700037183477791688.png 480w, https://Matilda-Ty.github.io/hugo-dev03/hugo-dev03/p/hugo-github%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241003145619_hu4805380795149235998.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;微信图片_20241003145619&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;178&#34;
+		data-flex-basis=&#34;428px&#34;
+	
+&gt;&lt;/p&gt;
 </description>
         </item>
         
